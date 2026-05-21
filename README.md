@@ -26,4 +26,8 @@ SweetTrack is a Java-based chocolate order and inventory management system devel
 - Sales reports
 
 ## Author
+<<<<<<< HEAD
 Sri Vidya
+=======
+Sri Vidya
+>>>>>>> b6da42b2e9f6c7a7f1aba6e3d392c7edd00caf09
