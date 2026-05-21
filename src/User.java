@@ -1,13 +1,54 @@
-class User {
+public class User {
 
-    String username;
-    String password;
-    String role;
+    // 🔒 Encapsulation (data hiding)
+    private String username;
+    private String password;
+    private String role;
 
-    User(String username, String password, String role) {
-
+    // 🧱 Constructor
+    public User(String username, String password, String role) {
         this.username = username;
         this.password = password;
         this.role = role;
+    }
+
+    // 👇 GETTERS (read access)
+    public String getUsername() {
+        return username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    // 👇 SETTERS (controlled write access)
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    // ⭐ Polymorphism-ready method (will be overridden)
+    public void dashboard() {
+        System.out.println("User Dashboard");
+    }
+
+    // ⭐ Better debugging / printing
+    @Override
+    public String toString() {
+        return "User{" +
+                "username='" + username + '\'' +
+                ", role='" + role + '\'' +
+                '}';
     }
 }
